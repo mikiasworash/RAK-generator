@@ -1,4 +1,9 @@
-const RAKS = [
+type RAKSItem = {
+  text: string;
+  className?: string;
+};
+
+const RAKS: RAKSItem[][] = [
   [
     { text: "Leave" },
     { text: "a" },
@@ -23,8 +28,6 @@ const RAKS = [
     { text: "clothing" },
     { text: "to" },
     { text: "a" },
-    { text: "shelter", className: "text-blue-500 dark:text-blue-500" },
-    { text: "or" },
     { text: "charity", className: "text-blue-500 dark:text-blue-500" },
   ],
   [
@@ -38,24 +41,11 @@ const RAKS = [
     { text: "mentor", className: "text-blue-500 dark:text-blue-500" },
   ],
   [
-    { text: "Give" },
-    { text: "a" },
-    { text: "compliment" },
-    { text: "to" },
-    { text: "a" },
-    { text: "stranger", className: "text-blue-500 dark:text-blue-500" },
-    { text: "today", className: "text-blue-500 dark:text-blue-500" },
-  ],
-  [
     { text: "Plant" },
     { text: "a" },
     { text: "tree" },
     { text: "or" },
-    { text: "flowers" },
-    { text: "in" },
-    { text: "a" },
-    { text: "public" },
-    { text: "area", className: "text-blue-500 dark:text-blue-500" },
+    { text: "flowers", className: "text-blue-500 dark:text-blue-500" },
   ],
   [
     { text: "Volunteer" },
@@ -64,9 +54,6 @@ const RAKS = [
     { text: "local" },
     { text: "community", className: "text-blue-500 dark:text-blue-500" },
     { text: "center", className: "text-blue-500 dark:text-blue-500" },
-    { text: "or" },
-    { text: "soup" },
-    { text: "kitchen" },
   ],
   [
     { text: "Offer" },
@@ -75,8 +62,6 @@ const RAKS = [
     { text: "for" },
     { text: "a" },
     { text: "friend", className: "text-blue-500 dark:text-blue-500" },
-    { text: "or" },
-    { text: "neighbor", className: "text-blue-500 dark:text-blue-500" },
   ],
   [
     { text: "Send" },
@@ -94,9 +79,6 @@ const RAKS = [
     { text: "help" },
     { text: "a" },
     { text: "colleague", className: "text-blue-500 dark:text-blue-500" },
-    { text: "with" },
-    { text: "their" },
-    { text: "workload" },
   ],
   [
     { text: "Donate" },
@@ -155,14 +137,14 @@ const RAKS = [
     { text: "need" },
   ],
   [
-    { text: "Listen" },
+    { text: "Listen", className: "text-blue-500 dark:text-blue-500" },
     { text: "attentively" },
     { text: "to" },
-    { text: "someone", className: "text-blue-500 dark:text-blue-500" },
+    { text: "someone" },
     { text: "who" },
     { text: "needs" },
     { text: "to" },
-    { text: "talk", className: "text-blue-500 dark:text-blue-500" },
+    { text: "talk" },
   ],
   [
     { text: "Give" },
@@ -170,8 +152,6 @@ const RAKS = [
     { text: "to" },
     { text: "your" },
     { text: "coworkers", className: "text-blue-500 dark:text-blue-500" },
-    { text: "or" },
-    { text: "classmates", className: "text-blue-500 dark:text-blue-500" },
   ],
   [
     { text: "Leave" },
@@ -185,8 +165,6 @@ const RAKS = [
   [
     { text: "Donate" },
     { text: "blood" },
-    { text: "or" },
-    { text: "plasma" },
     { text: "to" },
     { text: "a" },
     { text: "local" },
@@ -201,22 +179,6 @@ const RAKS = [
     { text: "local" },
     { text: "food", className: "text-blue-500 dark:text-blue-500" },
     { text: "bank", className: "text-blue-500 dark:text-blue-500" },
-  ],
-  [
-    { text: "Write" },
-    { text: "a" },
-    { text: "thank-you" },
-    { text: "letter" },
-    { text: "to" },
-    { text: "someone" },
-    { text: "who" },
-    { text: "has" },
-    { text: "made" },
-    { text: "a" },
-    { text: "difference", className: "text-blue-500 dark:text-blue-500" },
-    { text: "in" },
-    { text: "your", className: "text-blue-500 dark:text-blue-500" },
-    { text: "life", className: "text-blue-500 dark:text-blue-500" },
   ],
   [
     { text: "Offer" },
@@ -236,35 +198,6 @@ const RAKS = [
     { text: "for" },
     { text: "your" },
     { text: "server", className: "text-blue-500 dark:text-blue-500" },
-    { text: "or" },
-    { text: "delivery", className: "text-blue-500 dark:text-blue-500" },
-    { text: "person", className: "text-blue-500 dark:text-blue-500" },
-  ],
-  [
-    { text: "Offer" },
-    { text: "to" },
-    { text: "help", className: "text-blue-500 dark:text-blue-500" },
-    { text: "a" },
-    { text: "friend" },
-    { text: "move" },
-    { text: "or" },
-    { text: "unpack" },
-    { text: "after" },
-    { text: "a" },
-    { text: "move" },
-  ],
-  [
-    { text: "Support" },
-    { text: "local" },
-    { text: "small" },
-    { text: "businesses" },
-    { text: "by" },
-    { text: "writing" },
-    { text: "positive" },
-    { text: "reviews", className: "text-blue-500 dark:text-blue-500" },
-    { text: "and" },
-    { text: "referring", className: "text-blue-500 dark:text-blue-500" },
-    { text: "friends" },
   ],
   [
     { text: "Offer" },
@@ -273,13 +206,6 @@ const RAKS = [
     { text: "ear" },
     { text: "to" },
     { text: "someone" },
-    { text: "who" },
-    { text: "is" },
-    { text: "going" },
-    { text: "through" },
-    { text: "a" },
-    { text: "difficult" },
-    { text: "time" },
   ],
   [
     { text: "Send" },
@@ -289,10 +215,6 @@ const RAKS = [
     { text: "to" },
     { text: "a" },
     { text: "friend" },
-    { text: "who" },
-    { text: "is" },
-    { text: "feeling" },
-    { text: "down" },
   ],
   [
     { text: "Give" },
@@ -302,11 +224,6 @@ const RAKS = [
     { text: "on" },
     { text: "public" },
     { text: "transportation" },
-    { text: "to" },
-    { text: "someone" },
-    { text: "who" },
-    { text: "needs" },
-    { text: "it" },
   ],
   [
     { text: "Teach", className: "text-blue-500 dark:text-blue-500" },
@@ -314,12 +231,6 @@ const RAKS = [
     { text: "a" },
     { text: "new" },
     { text: "skill" },
-    { text: "or" },
-    { text: "share" },
-    { text: "your" },
-    { text: "knowledge" },
-    { text: "with" },
-    { text: "others" },
   ],
 ];
 
