@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Random Acts of Kindness Generator
 
-## Getting Started
+> To view the app live, Click 👉 [View Live](https://RAK-generator.vercel.app/)
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The Random Acts of Kindness Generator is a simple web application that provides users with random acts of kindness suggestions. Kindness is a powerful force that can brighten someone's day and create positive change in the world. This project aims to inspire and encourage acts of kindness by providing users with ideas for simple yet impactful actions they can take to spread kindness in their communities.
+
+## Features
+
+- Generates random acts of kindness suggestions with the click of a button
+- Includes a variety of kindness ideas covering different categories such as helping others, showing appreciation, and supporting the community
+- User-friendly interface with easy navigation
+
+## Installation
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/mikiasworash/RAK-generator.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd RAK-generator
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+npm install
+```
 
-## Learn More
+### 3. Run the development server
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Open [http://localhost:3000](http://localhost:3000) with your bowser
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+- Click the "Generate" button to receive a random act of kindness suggestion.
+- Share the generated suggestion with others to inspire kindness in your community.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you have any ideas for new features, improvements, or bug fixes, please open an issue or submit a pull request. Your contributions can help make this project even better and spread more kindness in the world.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Acknowledgements
+
+- Special thanks to [Aceternity](https://ui.aceternity.com/) for providing inspiration and resources for the UI.
