@@ -17,11 +17,9 @@ const Hero = () => {
       <div className="w-[90%] flex justify-center mb-10">
         <TypewriterEffectSmooth words={randomizedWords} />
       </div>
-      <ShimmerButton
-        title="Generate"
-        onClick={handleGenerate}
-        className="mb-4"
-      />
+      <div className="mb-4">
+        <ShimmerButton title="Generate" onClick={handleGenerate} />
+      </div>
       <SparklesPreview />
 
       <div className="absolute bottom-0">
