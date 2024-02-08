@@ -45,10 +45,10 @@ export const TypewriterEffectSmooth = ({
     );
   };
 
-  const [rerender, setRerender] = useState(false);
+  const [rerender, setRerender] = useState(0);
 
   useEffect(() => {
-    setRerender(!rerender);
+    setRerender((prev) => prev + 1);
   }, []);
 
   return (
