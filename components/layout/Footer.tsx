@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import React from "react";
 
 function Footer() {
   return (
     <div className="h-30 py-5 flex flex-col mx-auto  items-center bg-[#fcfcfc] shadow-inner dark:bg-black">
       <p>
         <span className="text-lg">&copy; </span> {new Date().getFullYear()} Made
-        with <span className="text-red-500">❤</span>
+        with ❤️
       </p>
       <div className="flex items-center gap-5 my-4">
         <a
@@ -47,4 +48,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default React.memo(Footer);
