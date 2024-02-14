@@ -8,7 +8,14 @@ function Footer() {
     <div className="h-30 py-5 flex flex-col mx-auto  items-center bg-[#fcfcfc] shadow-inner dark:bg-black">
       <p>
         <span className="text-lg">&copy; </span> {new Date().getFullYear()} Made
-        with ❤️
+        with ❤️ by{" "}
+        <a
+          href="http://mikiasworash.vercel.app"
+          target="_blank"
+          className="text-blue-500 hover:underline underline-offset-4"
+        >
+          M
+        </a>
       </p>
       <div className="flex items-center gap-5 my-4">
         <a
@@ -38,11 +45,6 @@ function Footer() {
             <FaGithub />
           </div>
         </a>
-        <Link href="/contact">
-          <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-700 p-3  cursor-pointer hover:scale-125 ease-in duration-300">
-            <AiOutlineMail />
-          </div>
-        </Link>
       </div>
     </div>
   );

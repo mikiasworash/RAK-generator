@@ -44,9 +44,9 @@ const Hero = () => {
 
   return (
     <>
-      <div className="absolute top-10 md:top-20 right-10 md:right-20 hover:cursor-pointer">
+      <div className="absolute top-20 right-10 md:right-20 hover:cursor-pointer">
         <CiShare2
-          className="share-icon sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+          className="share-icon text-2xl xl:text-3xl"
           onClick={() => {
             navigator.clipboard.writeText(
               randomizedWords.map((obj) => obj?.text).join(" ")
